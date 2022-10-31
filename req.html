@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="css/req.css">
+    
+    <!--===== Boxicons CSS =====-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+     
+    <!--<title>Custom Dropdown Select Menu</title>-->
+</head>
+<body>
+    <div class="container">
+        <div class="title">Request</div>
+        <div class="content">
+            <form action="#"> 
+            <div class="user-details">
+                <input type="radio" name="type" id="dot-1">
+                <input type="radio" name="type" id="dot-2">
+                <span class="type-title">Type</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="type">Equipment</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="type">Ingredient</span>
+                    </label>
+                <div class="select-menu">
+                    <span class="branch-title">Select your branch</span>
+                    <div class="select-btn">
+                            <span class="sBtn-text">Branch</span>
+                            <i class="bx bx-chevron-down"></i>
+                    </div>
+                        <ul class="options">
+                            <li class="option">
+                                <i class="bx bxl-equipment" style="color: #171515;"></i>
+                                <span class="option-text">KMUTT</span>
+                            </li>
+                            <li class="option">
+                                <i class="bx bxl-ingredient" style="color: #E1306C;"></i>
+                                <span class="option-text">KMILT</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <span class="details">Date</span>
+                    <input type="text" placeholder="DD-MM-YY" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Product ID</span>
+                    <input type="text" placeholder="Enter Product ID" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Product Name</span>
+                    <input type="text" placeholder="Enter Product Name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Amount</span>
+                    <input type="text" placeholder="0" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Description</span>
+                    <input type="text" placeholder="Detail of request" required>
+                </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Sent Request">
+                </div>
+            </div>
+        </form>
+    </div>
+        
+    <script src="req.js"></script>
+    
+</body>
+</html>
