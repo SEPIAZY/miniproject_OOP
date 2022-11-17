@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
-
 *{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -14,17 +13,16 @@
 }
 
 ::selection{
-    background-color: var(--Soft-Red);
+    background-color: #9b59b6;
     color: #fff;
 }
-
 
 ::-webkit-scrollbar{
     width: 12px;
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: var(--Soft-Blue);
+    background-color: #b97cd2;
 }
 
 section {
@@ -62,15 +60,15 @@ html{
 .all-btn{
     padding: 1rem 3rem;
     font-size: 1.5rem;
-    background-color: var(--Soft-Blue);
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
     border-radius: .5rem;
     color: #fff;
 }
 
 .all-btn:hover{
-    background-color: transparent;
-    color: var(--Soft-Blue);
-    border: 2px solid var(--Soft-Blue);
+    background: transparent;
+    color: #9b59b6;
+    border: 2px solid #9b59b6;
 }
 
 
@@ -79,7 +77,7 @@ html{
     --Soft-Red: hsl(0, 94%, 66%);
     --Grayish-Blue: hsl(229, 8%, 60%);
     --Very-Dark-Blue: hsl(229, 31%, 21%);
-    --box-shadow: .5rem .5rem  0 hsl(231, 69%, 60%);
+    --box-shadow: .5rem .5rem  0 #9b59b6;
     --text-shadow: .4rem .4rem  0 rgba(0, 0, 0, .2);
     --border: .2rem  solid var(--green);
 }
@@ -105,7 +103,6 @@ html{
     cursor: pointer;
 }
 
-
 .header .navbar a{
     margin-left: 2rem;
     font-size: 1.7rem;
@@ -114,28 +111,28 @@ html{
 
 
 .header .navbar a:hover{
-    color: var(--Soft-Red);
+    color: #9b59b6;
 }
 
 
 .header .navbar .btn{
     padding: .6rem 3rem;
-    background-color: var(--Soft-Red);
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
     color: #fff;
     border-radius: .5rem;
 }
 
 .header .navbar .btn:hover{
-    color: var(--Soft-Red);
-    background-color: transparent;
-    border: 2px solid var(--Soft-Red);
+    color: #9b59b6;
+    background: transparent;
+    border: 2px solid #9b59b6;
 }
 
 #menu-btn{
     padding: 1rem 1rem;
     background-color: #eee;
     font-size: 3rem;
-    color: var(--Soft-Blue);
+    color: #9b59b6;
     border-radius: .5rem;
     cursor: pointer;
     display: none;
@@ -170,7 +167,7 @@ html{
         box-shadow: var(--box-shadow);
         width: 33rem;
         border-radius: .5rem;
-        border: 2px solid var(--Soft-Blue);
+        border: 2px solid #9b59b6;
         background-color: #fff;
         transform: scale(0);
         transform-origin: top right;
@@ -234,7 +231,7 @@ html{
 .home .content p{
     font-size: 1.7rem;
     padding: 1rem 0;
-    max-width: 40rem;
+    max-width: 100rem;
     color: var(--Grayish-Blue);
     padding-bottom: 4rem;
 }
@@ -244,20 +241,17 @@ html{
     background-color: #fff;
     color: #000;
     font-size: 1.4rem;
-    box-shadow: .5rem .5rem hsl(231, 69%, 60%);
-    border: 2px solid var(--Soft-Blue);
+    box-shadow: .5rem .5rem #9b59b6;
+    border: 2px solid #9b59b6;
     border-radius: .5rem;
 }
 
 
 .home .content .home-btn:hover{
-    background-color: var(--Soft-Blue);
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
     box-shadow: none;
     color: #fff;
 }
-
-
-
 
 /* home section ends */
 
@@ -302,6 +296,93 @@ html{
     color: var(--Grayish-Blue);
     padding-bottom: 4rem;
 }
+
+.features .row .content .recipe .recipe-btn{
+    width: 65%;
+    display: grid;
+    float: right;
+    justify-content: space-between;
+    margin-top: -75px;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    border-radius: .5rem;
+    color: #fff;
+}
+
+.features .row .content .recipe .recipe-btn:hover{
+    background: transparent;
+    color: #9b59b6;
+    border: 2px solid #9b59b6;
+}
+.wrap-collabsible {
+    margin-top: 2rem 0;
+  }
+  
+  input[type='checkbox'] {
+    display: none;
+  }
+  
+  .lbl-toggle {
+    width: 65%;
+    display: grid;
+    float: right;
+    display: inline;
+    margin-top: -75px;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem 3rem;
+    color: #fff;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    cursor: pointer;
+    border-radius: .5rem;
+    transition: all 0.25s ease-out;
+  }
+  
+  .lbl-toggle:hover {
+    background: transparent;
+    color: #9b59b6;
+    border: 2px solid #9b59b6;
+  }
+  
+  .lbl-toggle::before {
+    content: ' ';
+    display: inline-block;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+    vertical-align: middle;
+    margin-right: .7rem;
+    transform: translateY(0px);
+    transition: transform .2s ease-out;
+  }
+  
+  .toggle:checked + .lbl-toggle::before {
+    transform: rotate(90deg) translateX(0px);
+  }
+  
+  .collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+  }
+  
+  .toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: 100vh;
+  }
+  
+  .toggle:checked + .lbl-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .collapsible-content .content-inner {
+    background: #f1f1f1;
+    border-bottom: 1px solid #ccc;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: 1.5rem 1.5rem;
+  }
 /* features section ends */
 
 
@@ -316,25 +397,23 @@ html{
 }
 
 .download .box{
-    border: 2px solid var(--Soft-Blue);
+    border: 2px solid #9b59b6;
     box-shadow: var(--box-shadow);
     border-radius: .5rem;
     text-align: center;
     padding: 2.5rem;
 }
 .download .box:hover{
-    border: 2px solid var(--Soft-Blue);
+    border: 2px solid #9b59b6;
     box-shadow: none;
+    
 }
-
 
 .download .box h3{
     font-size: 2rem;
     padding: 1rem 0;
     color: var(--Very-Dark-Blue);
 }
-
-
 
 .download .box p{
     font-size: 1.7rem;
@@ -344,9 +423,12 @@ html{
 
 /* downloads section ends */
 
-
-
 /* footer section starts */
+.footer h3{
+    font-size: 3rem;
+    padding: 1rem 0;
+    color: var(--Very-Dark-Blue);
+}
 .footer .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
@@ -388,7 +470,7 @@ html{
 
 
 .footer .credit span{
-    color: var(--Soft-Red);
+    color: #9b59b6;
     cursor: pointer;
 }
 

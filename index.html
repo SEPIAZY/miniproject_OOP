@@ -9,19 +9,21 @@
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/slide_box.css"/>
+    <link rel= "icon" href= "images/logo project.png" type = "image/x-icon">
 </head>
 
 <body>
     <!-- navbar sections starts  -->
     <header class="header">
         <div class="logo">
-            <img src="images/logo-bookmark.svg" alt="logo-bookmark">
+            <img src="images/logo project.png" alt="logo-tab" height="80" width="80" preserveAspectRatio="none">
+            <img src="images/project banner.png" alt="logo-banner" height="80" width="140" preserveAspectRatio="none">
         </div>
-
         <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#features">Features</a>
-            <a href="#download">Download</a>
+            <a href="#home">Menu</a>
+            <a href="#features">Store</a>
+            <a href="#download">Tracking</a>
             <a href="req.html">Request</a>
             <a href="login.html" class="btn">log in</a>
         </nav>
@@ -35,166 +37,294 @@
 
     <section class="home" id="home">
         <div class="content">
-            <h1>Simple Bookmark Manager</h1>
-            <p>A clean and simple interface to organize your favorite websites. open a browser tab and see your sites load instantly. try it for free!!</p>
-
-            <a href="#" class="home-btn">get it on chrome</a>
-        </div>
-
-
-        <div class="image">
-            <img src="images/illustration-hero.svg" alt="illustration-hero">
+            <h1>New Flavor!</h1>
+            <p>Recommend new ice cream flavors to our customer, let them try something special</p>
         </div>
     </section>
-
     <!-- home section ends -->
 
+    <div class="slider">
+        <span id="slide-1"></span>
+        <span id="slide-2"></span>
+        <span id="slide-3"></span>
+        <div class="image-container">
+          <img src="images/poster1.pngw" class="slide"  width="650" height="350"/>
+          <img src="images/poster2.png" class="slide" width="650" height="350"/>
+          <img src="images/poster3.png" class="slide" width="650" height="350"/>
+        </div>
+    </div>
+    <div class="buttons">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+    </div>
     <!-- features sectin starts  -->
-
-    <section class="features" id="features">
-        <div class="heading">
-            <h1>Features</h1>
-            <p>Our aim is to make it quick and easy for you to access your favorite websites. your bookmarks sync between your devices so you can access them on the go</p>
-        </div>
-
-
-        <div class="row">
-            <!-- 1 Tab  -->
-            <div class="image">
-                <img src="images/illustration-features-tab-1.svg" alt="illustration-features-tab-1">
-            </div>
-
-
-            <div class="content">
-                <h1>Bookmark in one click</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi sint odit tempora, maiores quos qui quisquam accusamus ad officiis sapiente.</p>
-                <a href="#" class="all-btn">more info</a>
-            </div>
-
-            <!-- 1 Tab  -->
-
-            <!-- 2 Tab  -->
-            <div class="content">
-                <h1>Intelligent search</h1>
-                <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
-                <a href="#" class="all-btn">more info</a>
-            </div>
-
-            <div class="image">
-                <img src="images/illustration-features-tab-2.svg" alt="illustration-features-tab-2">
-            </div>
-
-            <!-- 2 Tab  -->
-
-            <div class="image">
-                <img src="images/illustration-features-tab-3.svg" alt="illustration-features-tab-3">
-            </div>
-
-            <div class="content">
-                <h1>Share your bookmarks</h1>
-                <p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
-                <a href="#" class="all-btn">more info</a>
-            </div>
-
-
-            <!-- 3 Tab  -->
-
-        </div>
-    </section>
-
-
-    <!-- features sectin ends -->
-
-
-    <!-- downloads section starts  -->
-
+    
     <section class="download" id="download">
         <div class="heading">
-            <h1>Download Extension</h1>
-            <p>We've got more browsers in the pipeline. Please do le us know if you got've got a favorite you'd like us to prioritize</p>
+            <h1>Cone Size</h1>
+            <p>pick your fav cone!</p>
         </div>
-
         <div class="box-container">
             <div class="box">
-                <img src="images/logo-chrome.svg" alt="logo-chrome">
+                <img src="images/icon3.svg" alt="cone S">
+                <h3>Small (S)</h3>
+                <p></p>
+                <a href="" class="all-btn">Price : 25 Baht</a>
+            </div>
+    
+            <div class="box">
+                <img src="images/icon2.svg" alt="cone M">
+                <h3>Medium (M)</h3>
+                <p></p>
+                <a href="" class="all-btn">Price : 30 Baht</a>
+            </div>
+    
+            <div class="box">
+                <img src="images/icon.svg" alt="cone L">
+                <h3>Large (L)</h3>
+                <p></p>
+                <a href="" class="all-btn">Price : 40 Baht</a>
+            </div>
+        </div>
+    </section>
+    <section class="features" id="features">
+        <div class="row">
+            <div class="content">
+                <h1>Monday</h1>
+                <p>Blueberry Yogurt</p>
+                <div class="wrap-collabsible">
+                    <input id="collapsible" class="toggle" type="checkbox">
+                    <label for="collapsible" class="lbl-toggle">recipe</label>
+                    <div class="collapsible-content">
+                      <div class="content-inner">
+                        <p>
+                          QUnit is by calling one of the object that are embedded in JavaScript, and faster JavaScript program could also used with
+                          its elegant, well documented, and functional programming using JS, HTML pages Modernizr is a popular browsers without
+                          plug-ins. Test-Driven Development.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                
+                <p>Hokkaido Milk</p>
+                <div class="wrap-collabsible">
+                    <input id="collapsible2" class="toggle" type="checkbox">
+                    <label for="collapsible2" class="lbl-toggle">recipe</label>
+                    <div class="collapsible-content">
+                      <div class="content-inner">
+                        <p>
+                          QUnit is by calling one of the object that are embedded in JavaScript, and faster JavaScript program could also used with
+                          its elegant, well documented, and functional programming using JS, HTML pages Modernizr is a popular browsers without
+                          plug-ins. Test-Driven Development.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+                
+            <div class="content">
+                <h1>Tuesday</h1>
+                <p>Cream Cheese</p>
+                <div class="wrap-collabsible">
+                    <input id="collapsible3" class="toggle" type="checkbox">
+                    <label for="collapsible3" class="lbl-toggle">recipe</label>
+                    <div class="collapsible-content">
+                      <div class="content-inner">
+                        <p>
+                          QUnit is by calling one of the object that are embedded in JavaScript, and faster JavaScript program could also used with
+                          its elegant, well documented, and functional programming using JS, HTML pages Modernizr is a popular browsers without
+                          plug-ins. Test-Driven Development.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
 
-                <h3>Add to Chrome</h3>
-                <p>Minimum Version 63</p>
-                <a href="#" class="all-btn">install</a>
+                <p>Apple Yuzu</p>
+                <div class="wrap-collabsible">
+                    <input id="collapsible4" class="toggle" type="checkbox">
+                    <label for="collapsible4" class="lbl-toggle">recipe</label>
+                    <div class="collapsible-content">
+                      <div class="content-inner">
+                        <p>
+                          QUnit is by calling one of the object that are embedded in JavaScript, and faster JavaScript program could also used with
+                          its elegant, well documented, and functional programming using JS, HTML pages Modernizr is a popular browsers without
+                          plug-ins. Test-Driven Development.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
             </div>
 
-            <div class="box">
-                <img src="images/logo-firefox.svg" alt="logo-firefox">
+            <div class="content">
+                <h1>Wednesday</h1>
+                <p>Dark Chocolate</p>
+                <div class="wrap-collabsible">
+                    <input id="collapsible4" class="toggle" type="checkbox">
+                    <label for="collapsible4" class="lbl-toggle">recipe</label>
+                    <div class="collapsible-content">
+                      <div class="content-inner">
+                        <p>
+                          QUnit is by calling one of the object that are embedded in JavaScript, and faster JavaScript program could also used with
+                          its elegant, well documented, and functional programming using JS, HTML pages Modernizr is a popular browsers without
+                          plug-ins. Test-Driven Development.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
 
-                <h3>Add to Firefox</h3>
-                <p>Minimum Version 55</p>
-                <a href="#" class="all-btn">install</a>
+                <p>Milo School</p>
+                <div class="wrap-collabsible">
+                    <input id="collapsible5" class="toggle" type="checkbox">
+                    <label for="collapsible5" class="lbl-toggle">recipe</label>
+                    <div class="collapsible-content">
+                      <div class="content-inner">
+                        <p>
+                          QUnit is by calling one of the object that are embedded in JavaScript, and faster JavaScript program could also used with
+                          its elegant, well documented, and functional programming using JS, HTML pages Modernizr is a popular browsers without
+                          plug-ins. Test-Driven Development.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
             </div>
 
-            <div class="box">
-                <img src="images/logo-opera.svg" alt="logo-opera">
+            <div class="content">
+                <h1>Thursday</h1>
+                <p>Sea salt Caramel</p>
+                <div class="wrap-collabsible">
+                    <input id="collapsible6" class="toggle" type="checkbox">
+                    <label for="collapsible6" class="lbl-toggle">recipe</label>
+                    <div class="collapsible-content">
+                      <div class="content-inner">
+                        <p>
+                          QUnit is by calling one of the object that are embedded in JavaScript, and faster JavaScript program could also used with
+                          its elegant, well documented, and functional programming using JS, HTML pages Modernizr is a popular browsers without
+                          plug-ins. Test-Driven Development.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
 
-                <h3>Add to Opera</h3>
-                <p>Minimum Version 46</p>
-                <a href="#" class="all-btn">install</a>
+                <p>Houjicha</p>
+                <div class="wrap-collabsible">
+                    <input id="collapsible7" class="toggle" type="checkbox">
+                    <label for="collapsible7" class="lbl-toggle">recipe</label>
+                    <div class="collapsible-content">
+                      <div class="content-inner">
+                        <p>
+                          QUnit is by calling one of the object that are embedded in JavaScript, and faster JavaScript program could also used with
+                          its elegant, well documented, and functional programming using JS, HTML pages Modernizr is a popular browsers without
+                          plug-ins. Test-Driven Development.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            
+            <div class="content">
+                <h1>Friday</h1>
+                <p>Lychee Rose</p>
+                <div class="wrap-collabsible">
+                    <input id="collapsible8" class="toggle" type="checkbox">
+                    <label for="collapsible8" class="lbl-toggle">recipe</label>
+                    <div class="collapsible-content">
+                      <div class="content-inner">
+                        <p>
+                          QUnit is by calling one of the object that are embedded in JavaScript, and faster JavaScript program could also used with
+                          its elegant, well documented, and functional programming using JS, HTML pages Modernizr is a popular browsers without
+                          plug-ins. Test-Driven Development.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                <p>Pink Himalayan</p>
+                <div class="wrap-collabsible">
+                    <input id="collapsible9" class="toggle" type="checkbox">
+                    <label for="collapsible9" class="lbl-toggle">recipe</label>
+                    <div class="collapsible-content">
+                      <div class="content-inner">
+                        <p>
+                          QUnit is by calling one of the object that are embedded in JavaScript, and faster JavaScript program could also used with
+                          its elegant, well documented, and functional programming using JS, HTML pages Modernizr is a popular browsers without
+                          plug-ins. Test-Driven Development.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="content">
+                <h1>Saturday</h1>
+                <p>Kyoho Grape</p>
+                <div class="wrap-collabsible">
+                    <input id="collapsible10" class="toggle" type="checkbox">
+                    <label for="collapsible10" class="lbl-toggle">recipe</label>
+                    <div class="collapsible-content">
+                      <div class="content-inner">
+                        <p>
+                          QUnit is by calling one of the object that are embedded in JavaScript, and faster JavaScript program could also used with
+                          its elegant, well documented, and functional programming using JS, HTML pages Modernizr is a popular browsers without
+                          plug-ins. Test-Driven Development.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                <p>Mandarin</p>
+                <div class="wrap-collabsible">
+                    <input id="collapsible11" class="toggle" type="checkbox">
+                    <label for="collapsible11" class="lbl-toggle">recipe</label>
+                    <div class="collapsible-content">
+                      <div class="content-inner">
+                        <p>
+                          QUnit is by calling one of the object that are embedded in JavaScript, and faster JavaScript program could also used with
+                          its elegant, well documented, and functional programming using JS, HTML pages Modernizr is a popular browsers without
+                          plug-ins. Test-Driven Development.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
             </div>
         </div>
     </section>
 
-
-    <!-- downloads section ends -->
-
-
+    <!-- features sectin ends -->
 
     <!-- footer section starts  -->
 
    <section class="footer" id="footer">
+        <h3>Contact</h3>
        <div class="box-container">
            <div class="box">
-               <h3>quick links</h3>
-               <a href="#"><i class="fas fa-chevron-right"></i>home</a>
-               <a href="#"><i class="fas fa-chevron-right"></i>features</a>
-               <a href="#"><i class="fas fa-chevron-right"></i>download</a>
-               <a href="#"><i class="fas fa-chevron-right"></i>contact</a>
+               <a href="#"><i class="fas fa-phone"></i>+111-222-3333</a>
+               <a href="#"><i class="fas fa-phone"></i>+111-444-6666</a>
             </div>
             
-            
             <div class="box">
-                <h3>our services</h3>
-                <a href="#"><i class="fas fa-chevron-right"></i>bookmark extension</a>
-                <a href="#"><i class="fas fa-chevron-right"></i>chrome themes</a>
-                <a href="#"><i class="fas fa-chevron-right"></i>firefox themes</a>
-                <a href="#"><i class="fas fa-chevron-right"></i>screen recorder extension</a>
-                <a href="#"><i class="fas fa-chevron-right"></i>screen shot extension</a>
+                <a href="https://www.google.com/maps?q=kmutt" target="_blank"><i class="fas fa-map-marker-alt"></i>Bankok, thailand - 12345</a>
+               <a href="https://www.google.com/maps?q=tokyo" target="_blank"><i class="fas fa-map-marker-alt"></i>Tokyo, japan - 12222</a>
            </div>
 
            <div class="box">
-               <h3>contact info</h3>
-               <a href="#"><i class="fas fa-phone"></i>+123-456-789</a>
-               <a href="#"><i class="fas fa-phone"></i>+111-222-3333</a>
-               <a href="#"><i class="fas fa-envelope"></i>company@example.com</a>
-               <a href="#"><i class="fas fa-envelope"></i>company@example.com</a>
-               <a href="#"><i class="fas fa-map-marker-alt"></i>Mumbai, india - 12345</a>
+               <a href="#"><i class="fas fa-envelope"></i>ratatuilay_store@gmail.com</a>
+               <a href="#"><i class="fas fa-envelope"></i>ratatuilay_store@outlook.co.th</a>
            </div>
 
            <div class="box">
-               <h3>follow us</h3>
-               <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
-               <a href="#"><i class="fab fa-twitter"></i>facebook</a>
-               <a href="#"><i class="fab fa-instagram"></i>instagram</a>
-               <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
-               <a href="#"><i class="fab fa-pinterest"></i>pinterest</a>
+               <a href="#"><i class="fab fa-facebook-f"></i>Ratatuilay_store</a>
+               <a href="#"><i class="fab fa-instagram"></i>Ratatuilayy.</a>
            </div>
        </div>
 
 
        <div class="credit">created by
-           <a href="https://www.youtube.com/channel/UCK5YMqyy_fjAtwgu9hjxXJg" target="_blank"><span>Pranav Raj</span> | all rights reserved</a>
+           <a href="#" target="_blank"><span>Chill'n Team</span> | made your day</a>
        </div>
    </section>
 
     <!-- footer section ends -->
-
 
     <script src="js/main.js"></script>
 </body>
