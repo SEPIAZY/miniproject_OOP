@@ -246,7 +246,7 @@ html{
 }
 
 .address .box p{
-    max-width: 430px;
+    max-width: 350px;
     font-size: 1.7rem;
     padding-bottom: 2.5rem;
     color: var(--Grayish-Blue);
