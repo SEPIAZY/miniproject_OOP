@@ -166,8 +166,8 @@ body{
 .select-menu{
     width: 300px;
     height: 10px;
-    float: right;
-    margin-top: -31px;
+    margin-top: 0px;
+    margin-bottom: 80px;
 }
 .select-menu .select-btn{
     display: flex;
@@ -218,6 +218,6 @@ body{
     margin-right: 10px;
 }
 .option .option-text{
-    font-size: 18px;
+    font-size: 15px;
     color: #333;
 }

@@ -15,18 +15,18 @@
         <div class="content">
             <form action="#"> 
             <div class="user-details">
-                <input type="radio" name="type" id="dot-1">
-                <input type="radio" name="type" id="dot-2">
-                <span class="type-title">Type</span>
+                <!--input type="radio" name="type" id="dot-1">
+                <input type="radio" name="type" id="dot-2"-->
+                
                 <div class="category">
-                    <label for="dot-1">
+                    <!--label for="dot-1">
                         <span class="dot one"></span>
                         <span class="type">Equipment</span>
-                    </label>
-                    <label for="dot-2">
+                    </!--label>
+                    <label-- for="dot-2">
                         <span class="dot two"></span>
                         <span class="type">Ingredient</span>
-                    </label>
+                    </label-->
                 <div class="select-menu">
                     <span class="branch-title">Select your branch</span>
                     <div class="select-btn">
@@ -36,27 +36,53 @@
                         <ul class="options">
                             <li class="option">
                                 <i class="bx bxl-equipment" style="color: #171515;"></i>
-                                <span class="option-text">KMUTT</span>
+                                <span class="option-text">Central Pinklao</span>
                             </li>
                             <li class="option">
-                                <i class="bx bxl-ingredient" style="color: #E1306C;"></i>
-                                <span class="option-text">KMILT</span>
+                                <i class="bx bxl-ingredient" style="color: #171515;"></i>
+                                <span class="option-text">Siam Square One</span>
+                            </li>
+                            <li class="option">
+                                <i class="bx bxl-ingredient" style="color: #171515;"></i>
+                                <span class="option-text">ICONSIAM</span>
+                            </li>
+                            <li class="option">
+                                <i class="bx bxl-ingredient" style="color: #171515;"></i>
+                                <span class="option-text">Central World</span>
                             </li>
                         </ul>
                     </div>
                 </div>
+
                 <div class="input-box">
                     <span class="details">Date</span>
-                    <input type="text" placeholder="DD-MM-YY" required>
+                    <input type="date" id="date" name="date" required>
                 </div>
-                <div class="input-box">
-                    <span class="details">Product ID</span>
-                    <input type="text" placeholder="Enter Product ID" required>
+
+                <div class="category">
+                    <div class="select-menu">
+                    <span class="branch-title">Product</span>
+                    <div class="select-btn">
+                            <span class="sBtn-text">Product Name</span>
+                            <i class="bx bx-chevron-down"></i>
+                    </div>
+                        <ul class="options">
+                            <li class="option">
+                                <i class="bx bxl-equipment" style="color: #171515;"></i>
+                                <span class="option-text">Heavy cream</span>
+                            </li>
+                            <li class="option">
+                                <i class="bx bxl-ingredient" style="color: #171515;"></i>
+                                <span class="option-text">Butter</span>
+                            </li>
+                            <li class="option">
+                                <i class="bx bxl-ingredient" style="color: #171515;"></i>
+                                <span class="option-text">Sugar</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="input-box">
-                    <span class="details">Product Name</span>
-                    <input type="text" placeholder="Enter Product Name" required>
-                </div>
+        
                 <div class="input-box">
                     <span class="details">Amount</span>
                     <input type="text" placeholder="0" required>
