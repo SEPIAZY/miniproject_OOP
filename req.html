@@ -35,61 +35,64 @@
                     </div>
                         <ul class="options">
                             <li class="option">
-                                <i class="bx bxl-equipment" style="color: #171515;"></i>
+                                <i class="bx bxl-equipment"></i>
                                 <span class="option-text">Central Pinklao</span>
                             </li>
                             <li class="option">
-                                <i class="bx bxl-ingredient" style="color: #171515;"></i>
+                                <i class="bx bxl-ingredient"></i>
                                 <span class="option-text">Siam Square One</span>
                             </li>
                             <li class="option">
-                                <i class="bx bxl-ingredient" style="color: #171515;"></i>
+                                <i class="bx bxl-ingredient"></i>
                                 <span class="option-text">ICONSIAM</span>
                             </li>
                             <li class="option">
-                                <i class="bx bxl-ingredient" style="color: #171515;"></i>
+                                <i class="bx bxl-ingredient"></i>
                                 <span class="option-text">Central World</span>
                             </li>
                         </ul>
                     </div>
                 </div>
-            
-                <div class="category">
-                <div class="select-menu">
-                    <span class="branch-title">Product</span>
-                    <div class="select-btn">
-                            <span class="sBtn-text">Product Name</span>
-                            <i class="bx bx-chevron-down"></i>
-                    </div>
-                        <ul class="options">
-                            <li class="option">
-                                <i class="bx bxl-equipment" style="color: #171515;"></i>
-                                <span class="option-text">Heavy cream</span>
-                            </li>
-                            <li class="option">
-                                <i class="bx bxl-ingredient" style="color: #171515;"></i>
-                                <span class="option-text">Butter</span>
-                            </li>
-                            <li class="option">
-                                <i class="bx bxl-ingredient" style="color: #171515;"></i>
-                                <span class="option-text">Sugar</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
 
-                <div class="input-box">
-                    <span class="details">Date</span>
-                    <input type="date" id="date" name="date" required>
+                <div class="category">
+                    <tr>
+                        <td>Select your brach</td>
+                        <td>
+                            <div class="select-btn">
+                                <select name="brach">
+                                <option value="Central Pinklao">Central Pinklao</option>
+                                <option value="Siam Square One">Siam Square One</option>
+                                <option value="ICONSIAM">ICONSIAM</option>
+                                <option value="Central World">Central World</option>
+                            </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Select your product</td>
+                        <td>
+                            <select name="product">
+                                <option value="Heavy cream">Heavy cream</option>
+                                <option value="Butter">Butter</option>
+                                <option value="Sugar">Sugar</option>
+                            </select>
+                        </td>
+                    </tr>
                 </div>
-                <div class="input-box">
-                    <span class="details">Amount</span>
-                    <input type="text" placeholder="0" required>
-                </div>
-                <div class="input-box">
-                    <span class="details">Description</span>
-                    <input type="text" placeholder="Detail of request" required>
-                </div>
+                
+
+                    <div class="input-box">
+                        <span class="details">Date</span>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Amount</span>
+                        <input type="text" placeholder="0" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Description</span>
+                        <input type="text" placeholder="Detail of request" required>
+                    </div>
                 </div>
                 <div class="button">
                     <input type="submit" value="Sent Request">

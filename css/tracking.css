@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: 0.2s ease-in-out;
+    color: #000;
+    text-decoration: none;
+}
+::selection{
+    background-color: #9b59b6;
+    color: #fff;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #b97cd2;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.heading{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--Very-Dark-Blue);
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+
+.heading h1{
+    padding-bottom: 2rem;
+}
+
+
+.heading p{
+    max-width: 60rem;
+    margin: auto;
+    color: var(--Grayish-Blue);
+    font-size: 1.7rem;
+}
+
+
+.all-btn{
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    border-radius: .5rem;
+    color: #fff;
+}
+
+.all-btn:hover{
+    background: transparent;
+    color: #9b59b6;
+    border: 2px solid #9b59b6;
+}
+
+
+:root{
+    --Soft-Blue: hsl(231, 69%, 60%);
+    --Soft-Red: hsl(0, 94%, 66%);
+    --Grayish-Blue: hsl(229, 8%, 60%);
+    --Very-Dark-Blue: hsl(229, 31%, 21%);
+    --box-shadow: .5rem .5rem  0 #9b59b6;
+    --text-shadow: .4rem .4rem  0 rgba(0, 0, 0, .2);
+    --border: .2rem  solid var(--green);
+    --main: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.header{
+    padding: 3rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    left: 0;
+    z-index: 10000;
+    background-color: #fff;
+    box-shadow: 0rem 0.5rem 1.5rem rgba(0, 0, 0, .1);
+}
+
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .navbar a{
+    margin-left: 2rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+
+
+.header .navbar a:hover{
+    color: #9b59b6;
+}
+
+
+.header .navbar .btn{
+    padding: .6rem 3rem;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    color: #fff;
+    border-radius: .5rem;
+}
+
+.header .navbar .btn:hover{
+    color: #9b59b6;
+    background: transparent;
+    border: 2px solid #9b59b6;
+}
+
+#menu-btn{
+    padding: 1rem 1rem;
+    background-color: #eee;
+    font-size: 3rem;
+    color: #9b59b6;
+    border-radius: .5rem;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 2rem;
+    }
+    
+}
+
+@media (max-width: 768px){
+    #menu-btn{
+        display: initial;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 115%;
+        right: 2rem;
+        box-shadow: var(--box-shadow);
+        width: 33rem;
+        border-radius: .5rem;
+        border: 2px solid #9b59b6;
+        background-color: #fff;
+        transform: scale(0);
+        transform-origin: top right;
+    }
+
+    .header .navbar.active{
+        transform: scale(1);
+    }
+
+    .header .navbar a{
+        margin: 2.5rem;
+        text-align: center;
+        display: block;
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+}
+
+.home .content{
+    flex: 1 1 45rem;
+}
+
+
+.home .content h1{
+    margin-top: 20rem;
+    margin-bottom: 2rem;
+    font-size: 4.5rem;
+    padding-block-end: 1rem 0;
+    color: var(--Very-Dark-Blue);
+}
+
+.home .content p{
+    display: flex;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    max-width: 100rem;
+    color: var(--Grayish-Blue);
+    padding-bottom: 4rem;
+}
+
+button{
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px;
+    color: #fff;
+}
+
+td button:nth-child(1){
+    border: 2px solid #a4bfe0;
+    background: transparent;
+}
+
+td button:nth-child(2){
+    border: 2px solid #a4bfe0;
+    background: transparent;
+}
+
+.table{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    table-layout: fixed;
+    min-width: 1000px;
+    border-collapse: collapse;
+}
+
+.table-header h1{
+    display: flex;
+    margin-top: -150px;
+    margin-left: 50px;
+    font-size: 3.5rem;
+    padding-block-end: 1rem 0;
+    color: var(--Very-Dark-Blue);
+}
+
+thead th{
+    position: sticky;
+    top: 0;
+    background-color: #f6f9fc;
+    color: #a4bfe0;
+    font-size: 15px;
+}
+
+th,td{
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 20px;
+    word-break: break-all;
+    text-align: center;
+    font-size: 15px;
+}
+
+tr:hover td{
+    color: #9b59b6;
+    cursor: pointer;
+    background-color: #f6f9fc;
+}
+
+.table-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 200px;
+}
+
+.table-header p{
+    color: var(--Very-Dark-Blue);
+}
+
+.table-section{
+    height: 650px;
+    overflow: auto;
+}
+
+/*pagination*/
+.page{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: -25rem;
+}
+
+.pagination ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: var(--main);
+    padding: 8px;
+    border-radius: 50px;
+    box-shadow: #f6f9fc;
+  }
+  .pagination ul li{
+    color: #fff;
+    list-style: none;
+    line-height: 45px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+  }
+  .pagination ul li.numb{
+    list-style: none;
+    height: 45px;
+    width: 45px;
+    margin: 0 3px;
+    line-height: 45px;
+    border-radius: 50%;
+  }
+  .pagination ul li.numb.first{
+    margin: 0px 3px 0 -5px;
+  }
+  .pagination ul li.numb.last{
+    margin: 0px -5px 0 3px;
+  }
+  .pagination ul li.dots{
+    font-size: 22px;
+    cursor: default;
+  }
+
+  .pagination ul li.prev{
+    border-radius: 25px 5px 5px 25px;
+  }
+
+  .pagination ul li.next{
+    border-radius: 5px 25px 25px 5px;
+  }
+
+  .pagination ul li.btn{
+    padding: 0 20px;
+    border-radius: 50px;
+  }
+  .pagination li.active,
+  .pagination ul li.numb:hover,
+  .pagination ul li:first-child:hover,
+  .pagination ul li:last-child:hover{
+    color: #9b59b6;
+    background: #fff;
+  }
+
